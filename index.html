@@ -67,7 +67,7 @@
                 <a href="#skills" class="text-sm font-medium hover:text-blue-400 transition-colors relative group">Skills<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span></a>
                 <a href="#contact" class="text-sm font-medium hover:text-blue-400 transition-colors relative group">Contact<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span></a>
             </div>
-            <a href="filess/Tirth_chheta_Data_Scientist.doc" download="Tirth_chheta_Data_Scientist.doc" class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all transform hover:scale-105 inline-flex items-center">
+            <a href="filess/Tirthchheta.pdf" download="Tirthchheta.pdf" class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all transform hover:scale-105 inline-flex items-center">
                 <i class="fas fa-download mr-2"></i>Resume
             </a>
             <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
@@ -112,6 +112,7 @@
                     <a href="https://linkedin.com/in/tirthchheta" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110 text-2xl"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/tirthchheta511" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors transform hover:scale-110 text-2xl"><i class="fab fa-github"></i></a>
                     <a href="http://kaggle.com/tirthnileshchheta" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110 text-2xl"><i class="fab fa-kaggle"></i></a>
+                    <a href="https://medium.com/@tirthchheta511" target="_blank" class="text-gray-400 hover:text-green-400 transition-colors transform hover:scale-110 text-2xl"><i class="fab fa-medium"></i></a>
                 </div>
             </div>
             <div class="relative reveal" style="animation-delay: 0.2s;">
@@ -132,7 +133,7 @@
                         <p class="text-sm text-gray-500">University of New Haven · NYC</p>
                     </div>
                     <div class="space-y-3">
-                        <div class="flex items-center justify-between p-3 glass rounded-xl"><span class="text-gray-400 text-sm">ML Projects</span><span class="text-2xl font-bold gradient-text">7+</span></div>
+                        <div class="flex items-center justify-between p-3 glass rounded-xl"><span class="text-gray-400 text-sm">ML Projects</span><span class="text-2xl font-bold gradient-text">10+</span></div>
                         <div class="flex items-center justify-between p-3 glass rounded-xl"><span class="text-gray-400 text-sm">Efficiency Boost</span><span class="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">95%</span></div>
                         <div class="flex items-center justify-between p-3 glass rounded-xl"><span class="text-gray-400 text-sm">Model Accuracy</span><span class="text-2xl font-bold bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">82-94%</span></div>
                     </div>
@@ -258,11 +259,11 @@
                         <h3 class="text-lg font-bold text-rose-300">Healthcare Analytics</h3>
                         <span class="px-2 py-1 text-[11px] rounded-full bg-rose-500/10 border border-rose-500/40 text-rose-200">ML Projects</span>
                     </div>
-                    <p class="text-sm text-gray-300 mb-4">Used structured patient data to predict conditions like breast cancer and diabetes, focusing on accuracy without losing interpretability for clinicians.</p>
+                    <p class="text-sm text-gray-300 mb-4">Used structured patient data to predict conditions like breast cancer, diabetes, and hospital readmissions with SHAP-based interpretability for clinicians.</p>
                     <ul class="space-y-2 text-sm text-gray-300">
-                        <li>• Compared multiple classification algorithms</li>
-                        <li>• Used feature importance to explain model behavior</li>
-                        <li>• Designed metrics beyond just "overall accuracy"</li>
+                        <li>• 88% accuracy on hospital readmission prediction</li>
+                        <li>• SHAP analysis identified top risk factors</li>
+                        <li>• Power BI dashboard for hospital resource planning</li>
                     </ul>
                 </div>
                 <div class="glass rounded-2xl p-6 card-hover reveal" style="animation-delay: 200ms;">
@@ -270,11 +271,11 @@
                         <h3 class="text-lg font-bold text-indigo-300">User Experience</h3>
                         <span class="px-2 py-1 text-[11px] rounded-full bg-indigo-500/10 border border-indigo-500/40 text-indigo-200">Recommenders &amp; NLP</span>
                     </div>
-                    <p class="text-sm text-gray-300 mb-4">Built recommenders and NLP pipelines that turn interaction data and text into targeted suggestions and better content decisions.</p>
+                    <p class="text-sm text-gray-300 mb-4">Built hybrid recommenders and NLP pipelines that turn interaction data and text into targeted suggestions and better content decisions.</p>
                     <ul class="space-y-2 text-sm text-gray-300">
-                        <li>• Movie &amp; Spotify-style recommendation engines</li>
-                        <li>• Sentiment analysis on social / text data</li>
-                        <li>• Hybrid approaches (content + collaborative)</li>
+                        <li>• 91% precision on e-commerce recommendation engine</li>
+                        <li>• Movie &amp; Spotify-style recommendation systems</li>
+                        <li>• Deployed via FastAPI + Docker with Tableau KPI tracking</li>
                     </ul>
                 </div>
             </div>
@@ -354,7 +355,7 @@
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-10 reveal">
                 <h2 class="text-4xl md:text-5xl font-bold mb-3"><span class="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">Sentiment Lab</span></h2>
-                <p class="text-lg text-gray-300">Try a tiny "model" demo: paste a tweet, review, or sentence and see how my sentiment pipeline might respond. This is a lightweight keyword demo – not a full production model.</p>
+                <p class="text-lg text-gray-300">Try a tiny "model" demo: paste a tweet, review, or sentence and see how my sentiment pipeline might respond.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 items-stretch">
                 <div class="glass rounded-2xl p-6 flex flex-col space-y-4 reveal">
@@ -377,7 +378,7 @@
                     </div>
                     <div class="mt-4 text-xs text-gray-400">
                         <p class="mb-1 font-semibold text-gray-200">How this demo works:</p>
-                        <p>It uses simple keyword lists (e.g., "love", "great", "terrible", "hate") to approximate sentiment. My real projects use trained models with proper evaluation.</p>
+                        <p>It uses simple keyword lists to approximate sentiment. My real projects use trained models with proper evaluation.</p>
                     </div>
                 </div>
             </div>
@@ -389,7 +390,7 @@
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
             <div class="space-y-6 reveal">
                 <h2 class="text-4xl md:text-5xl font-bold mb-2"><span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Meet My AI Twin</span></h2>
-                <p class="text-lg text-gray-300">This is a mini agent trained on my background as an <span class="text-blue-400 font-semibold">MS Data Science student</span> — projects, experience, and goals. Ask it how I work, what I've built, or what I can do for your team.</p>
+                <p class="text-lg text-gray-300">This is a mini agent trained on my background as an <span class="text-blue-400 font-semibold">MS Data Science student</span> — projects, experience, and goals.</p>
                 <div class="glass rounded-2xl p-5 space-y-4">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full overflow-hidden border border-blue-500/60"><img src="images/tirthchheta.jpg" class="w-full h-full object-cover" alt="Tirth Chheta" /></div>
@@ -443,6 +444,7 @@
                             <a href="mailto:tirthchheta511@gmail.com" class="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors group"><div class="p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors"><i class="fas fa-envelope"></i></div><span>tirthchheta511@gmail.com</span></a>
                             <a href="https://linkedin.com/in/tirthchheta" target="_blank" class="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors group"><div class="p-3 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors"><i class="fab fa-linkedin"></i></div><span>linkedin.com/in/tirthchheta</span></a>
                             <a href="https://github.com/tirthchheta511" target="_blank" class="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-colors group"><div class="p-3 bg-purple-500/10 rounded-lg group-hover:bg-purple-500/20 transition-colors"><i class="fab fa-github"></i></div><span>github.com/tirthchheta511</span></a>
+                            <a href="https://medium.com/@tirthchheta511" target="_blank" class="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors group"><div class="p-3 bg-green-500/10 rounded-lg group-hover:bg-green-500/20 transition-colors"><i class="fab fa-medium"></i></div><span>medium.com/@tirthchheta511</span></a>
                         </div>
                         <div class="pt-6"><p class="text-sm text-gray-500 mb-4">Response time</p><p class="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Within 24 hours</p></div>
                     </div>
@@ -468,6 +470,7 @@
                         <a href="https://linkedin.com/in/tirthchheta" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/tirthchheta511" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors text-xl"><i class="fab fa-github"></i></a>
                         <a href="http://kaggle.com/tirthnileshchheta" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-kaggle"></i></a>
+                        <a href="https://medium.com/@tirthchheta511" target="_blank" class="text-gray-400 hover:text-green-400 transition-colors text-xl"><i class="fab fa-medium"></i></a>
                     </div>
                 </div>
                 <div>
@@ -509,7 +512,7 @@
                 </div>
                 <div class="flex gap-4">
                     <a href="https://github.com/tirthchheta511" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all text-center"><i class="fab fa-github mr-2"></i>View on GitHub</a>
-                    <a href="https://github.com/tirthchheta511" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3 glass rounded-lg font-semibold hover:bg-slate-700 transition-colors text-center"><i class="fas fa-file-alt mr-2"></i>Read Full Case Study</a>
+                    <a href="https://medium.com/@tirthchheta511" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3 glass rounded-lg font-semibold hover:bg-slate-700 transition-colors text-center"><i class="fab fa-medium mr-2"></i>Read on Medium</a>
                 </div>
             </div>
         </div>
@@ -517,20 +520,153 @@
 
     <script>
         // ============================================================
-        // DATA
+        // DATA — 10 projects including 3 new ones
         // ============================================================
         const projects = [
-            { id:1, title:'Breast Cancer Prediction', category:'Classification', explain:{ student:'I used patient tumor features like radius and texture to teach a model to tell benign from malignant tumors.', recruiter:'Built a classification pipeline on medical features to separate benign vs malignant tumors, focusing on high recall and interpretability.', engineer:'Implemented feature-engineered Random Forest / tree-based models on tabular tumor data with careful cross-validation and feature importance inspection.' }, metrics:{ testAcc:'92.98%', trainAcc:'94.73%' }, tags:['Classification','Healthcare','Random Forest','scikit-learn'], gradient:'from-pink-500 to-rose-600', icon:'fas fa-bullseye' },
-            { id:2, title:'NYSE Stock Price Prediction', category:'Time Series', explain:{ student:'I analyzed decades of stock data to try to forecast how prices might move.', recruiter:'Built time series models on long-horizon NYSE data to explore forecasting performance and feature design over changing market regimes.', engineer:'Compared ARIMA-style baselines with deep sequence models (LSTM) on 1922–2024 NYSE data, focusing on scaling, leakage, and realistic evaluation.' }, metrics:{ testAcc:'82%', trainAcc:'86%' }, tags:['Time Series','Finance','LSTM','ARIMA'], gradient:'from-blue-500 to-cyan-600', icon:'fas fa-chart-line' },
-            { id:3, title:'Movie Recommendation Engine', category:'Recommendation', explain:{ student:'I made a system that suggests movies people might like based on ratings and movie content.', recruiter:'Designed a hybrid recommender combining user behavior and movie content to generate more personalized film suggestions.', engineer:'Implemented collaborative filtering + content-based similarity on user–item matrices with evaluation (precision@K, recall@K) across different strategies.' }, metrics:{ testAcc:'85%' }, tags:['Recommendation','Collaborative Filtering','Python'], gradient:'from-purple-500 to-indigo-600', icon:'fas fa-users' },
-            { id:4, title:'Spotify Playlist AI', category:'Recommendation', explain:{ student:'I used song features like tempo and energy to recommend tracks that match a mood.', recruiter:'Built a music recommendation prototype that uses audio features and past preferences to suggest mood-aware playlists.', engineer:'Processed audio feature vectors (energy, tempo, valence, etc.) and user behavior logs to build nearest-neighbor / embedding-based recommenders for playlist generation.' }, metrics:{ testAcc:'88%', trainAcc:'91%' }, tags:['Music','ML','Audio Analysis'], gradient:'from-green-500 to-emerald-600', icon:'fas fa-music' },
-            { id:5, title:'Diabetes Risk Prediction', category:'Classification', explain:{ student:'I used health information like BMI and glucose levels to estimate someone\'s risk of diabetes.', recruiter:'Developed a tabular ML model to flag patients at higher diabetes risk using routine health indicators, with an emphasis on recall and interpretability.', engineer:'Trained logistic regression and tree models on health-feature datasets; tuned thresholds and class weights to handle imbalance and prioritize clinically meaningful recall.' }, metrics:{ testAcc:'87%', trainAcc:'89%' }, tags:['Healthcare','Classification','Logistic Regression'], gradient:'from-red-500 to-orange-600', icon:'fas fa-heartbeat' },
-            { id:6, title:'Twitter Sentiment Analysis', category:'NLP', explain:{ student:'I taught a model to decide if a tweet sounds positive, negative, or neutral.', recruiter:'Built an NLP pipeline that classifies social-media text into sentiment categories, helping summarize user reactions at scale.', engineer:'Preprocessed tweets (tokenization, normalization) and trained a sentiment classifier; experimented with classical features and transformer-style embeddings.' }, metrics:{}, tags:['NLP','Sentiment','Twitter'], gradient:'from-sky-500 to-blue-600', icon:'fas fa-brain' },
-            { id:7, title:'SONAR Rock vs Mine', category:'Classification', explain:{ student:'I used sonar signal data to help a model tell rocks from metal mines underwater.', recruiter:'Implemented signal-based classification to distinguish harmless rocks from potential mines using sonar returns.', engineer:'Worked with high-dimensional numeric sonar features; trained and evaluated classifiers, paying attention to overfitting and generalization across environments.' }, metrics:{ testAcc:'76.19%', trainAcc:'83.42%' }, tags:['Signal Processing','Classification'], gradient:'from-teal-500 to-cyan-600', icon:'fas fa-bolt' }
+            {
+                id: 1,
+                title: 'Hospital Readmission Prediction',
+                category: 'Classification',
+                explain: {
+                    student: 'I built a model that predicts which patients are likely to be readmitted to hospital, using real medical data and SHAP to explain why.',
+                    recruiter: 'Developed a patient readmission prediction model on UCI Diabetes Hospital data with 88% accuracy, SHAP interpretability, and a Power BI dashboard for hospital resource planning.',
+                    engineer: 'Trained Random Forest and XGBoost classifiers on the UCI Diabetes Hospital dataset; applied SHAP analysis for feature interpretability and built a Power BI dashboard for risk visualization.'
+                },
+                metrics: { testAcc: '88%' },
+                tags: ['Classification', 'Healthcare', 'Random Forest', 'XGBoost', 'SHAP', 'Power BI'],
+                gradient: 'from-rose-500 to-pink-600',
+                icon: 'fas fa-hospital'
+            },
+            {
+                id: 2,
+                title: 'Air Quality Forecasting System',
+                category: 'Time Series',
+                explain: {
+                    student: 'I built models that predict air pollution levels (PM2.5, CO2) across 50+ U.S. cities using historical EPA data.',
+                    recruiter: 'Built LSTM and Prophet forecasting models on EPA air quality data predicting pollution levels across 50+ U.S. cities at 85% accuracy, with a Power BI dashboard and FastAPI deployment.',
+                    engineer: 'LSTM and Prophet models on EPA data with geospatial feature engineering, seasonal decomposition, anomaly detection; deployed via FastAPI with real-time AQI Power BI dashboard.'
+                },
+                metrics: { testAcc: '85%' },
+                tags: ['Time Series', 'LSTM', 'Prophet', 'FastAPI', 'Power BI', 'Geospatial'],
+                gradient: 'from-sky-500 to-teal-600',
+                icon: 'fas fa-wind'
+            },
+            {
+                id: 3,
+                title: 'E-Commerce Recommendation Engine',
+                category: 'Recommendation',
+                explain: {
+                    student: 'I built a system that recommends products to shoppers based on their past behavior, using collaborative filtering and matrix factorization.',
+                    recruiter: 'Built a hybrid recommendation system with 91% precision using collaborative filtering and matrix factorization, deployed as a FastAPI + Docker API with a Tableau KPI dashboard.',
+                    engineer: 'Collaborative filtering + matrix factorization hybrid using Python, scikit-learn, and Surprise library; FastAPI + Docker deployment; engagement KPIs tracked via real-time Tableau dashboard.'
+                },
+                metrics: { testAcc: '91%' },
+                tags: ['Recommendation', 'Collaborative Filtering', 'FastAPI', 'Docker', 'Tableau'],
+                gradient: 'from-amber-500 to-orange-600',
+                icon: 'fas fa-shopping-cart'
+            },
+            {
+                id: 4,
+                title: 'Breast Cancer Prediction',
+                category: 'Classification',
+                explain: {
+                    student: 'I used patient tumor features like radius and texture to teach a model to tell benign from malignant tumors.',
+                    recruiter: 'Built a classification pipeline on medical features to separate benign vs malignant tumors, focusing on high recall and interpretability.',
+                    engineer: 'Implemented feature-engineered Random Forest / tree-based models on tabular tumor data with careful cross-validation and feature importance inspection.'
+                },
+                metrics: { testAcc: '92.98%', trainAcc: '94.73%' },
+                tags: ['Classification', 'Healthcare', 'Random Forest', 'scikit-learn'],
+                gradient: 'from-pink-500 to-rose-600',
+                icon: 'fas fa-bullseye'
+            },
+            {
+                id: 5,
+                title: 'NYSE Stock Price Prediction',
+                category: 'Time Series',
+                explain: {
+                    student: 'I analyzed decades of stock data to try to forecast how prices might move.',
+                    recruiter: 'Built time series models on long-horizon NYSE data to explore forecasting performance and feature design over changing market regimes.',
+                    engineer: 'Compared ARIMA-style baselines with LSTM models on 1922–2024 NYSE data, focusing on scaling, leakage, and realistic evaluation.'
+                },
+                metrics: { testAcc: '82%', trainAcc: '86%' },
+                tags: ['Time Series', 'Finance', 'LSTM', 'ARIMA'],
+                gradient: 'from-blue-500 to-cyan-600',
+                icon: 'fas fa-chart-line'
+            },
+            {
+                id: 6,
+                title: 'Movie Recommendation Engine',
+                category: 'Recommendation',
+                explain: {
+                    student: 'I made a system that suggests movies people might like based on ratings and movie content.',
+                    recruiter: 'Designed a hybrid recommender combining user behavior and movie content to generate more personalized film suggestions.',
+                    engineer: 'Implemented collaborative filtering + content-based similarity on user–item matrices with evaluation (precision@K, recall@K) across different strategies.'
+                },
+                metrics: { testAcc: '85%' },
+                tags: ['Recommendation', 'Collaborative Filtering', 'Python'],
+                gradient: 'from-purple-500 to-indigo-600',
+                icon: 'fas fa-film'
+            },
+            {
+                id: 7,
+                title: 'Spotify Playlist AI',
+                category: 'Recommendation',
+                explain: {
+                    student: 'I used song features like tempo and energy to recommend tracks that match a mood.',
+                    recruiter: 'Built a music recommendation prototype that uses audio features and past preferences to suggest mood-aware playlists.',
+                    engineer: 'Processed audio feature vectors (energy, tempo, valence, etc.) and user behavior logs to build nearest-neighbor / embedding-based recommenders for playlist generation.'
+                },
+                metrics: { testAcc: '88%', trainAcc: '91%' },
+                tags: ['Music', 'ML', 'Audio Analysis'],
+                gradient: 'from-green-500 to-emerald-600',
+                icon: 'fas fa-music'
+            },
+            {
+                id: 8,
+                title: 'Diabetes Risk Prediction',
+                category: 'Classification',
+                explain: {
+                    student: 'I used health information like BMI and glucose levels to estimate someone\'s risk of diabetes.',
+                    recruiter: 'Developed a tabular ML model to flag patients at higher diabetes risk using routine health indicators, with an emphasis on recall and interpretability.',
+                    engineer: 'Trained logistic regression and tree models on health-feature datasets; tuned thresholds and class weights to handle imbalance and prioritize clinically meaningful recall.'
+                },
+                metrics: { testAcc: '87%', trainAcc: '89%' },
+                tags: ['Healthcare', 'Classification', 'Logistic Regression'],
+                gradient: 'from-red-500 to-orange-600',
+                icon: 'fas fa-heartbeat'
+            },
+            {
+                id: 9,
+                title: 'Twitter Sentiment Analysis',
+                category: 'NLP',
+                explain: {
+                    student: 'I taught a model to decide if a tweet sounds positive, negative, or neutral.',
+                    recruiter: 'Built an NLP pipeline that classifies social-media text into sentiment categories, helping summarize user reactions at scale.',
+                    engineer: 'Preprocessed tweets (tokenization, normalization) and trained a sentiment classifier; experimented with classical features and transformer-style embeddings.'
+                },
+                metrics: {},
+                tags: ['NLP', 'Sentiment', 'Twitter'],
+                gradient: 'from-sky-500 to-blue-600',
+                icon: 'fas fa-brain'
+            },
+            {
+                id: 10,
+                title: 'SONAR Rock vs Mine',
+                category: 'Classification',
+                explain: {
+                    student: 'I used sonar signal data to help a model tell rocks from metal mines underwater.',
+                    recruiter: 'Implemented signal-based classification to distinguish harmless rocks from potential mines using sonar returns.',
+                    engineer: 'Worked with high-dimensional numeric sonar features; trained and evaluated classifiers, paying attention to overfitting and generalization across environments.'
+                },
+                metrics: { testAcc: '76.19%', trainAcc: '83.42%' },
+                tags: ['Signal Processing', 'Classification'],
+                gradient: 'from-teal-500 to-cyan-600',
+                icon: 'fas fa-bolt'
+            }
         ];
 
         // ============================================================
-        // EXPERIENCE — Tecrave.org + Laxmi Software Technologies
+        // EXPERIENCE
         // ============================================================
         const experiences = [
             {
@@ -566,31 +702,35 @@
         ];
 
         const skills = [
-            { title:'Languages', items:['Python','R','SQL','C++','Java'], icon:'fas fa-code', color:'from-blue-500 to-cyan-500' },
-            { title:'ML & DL', items:['TensorFlow','PyTorch','scikit-learn','XGBoost','Keras'], icon:'fas fa-brain', color:'from-purple-500 to-pink-500' },
-            { title:'Data Tools', items:['Pandas','NumPy','Matplotlib','Seaborn','Plotly'], icon:'fas fa-chart-bar', color:'from-green-500 to-emerald-500' },
-            { title:'Platforms', items:['AWS','GCP','Azure','Snowflake','Airflow'], icon:'fas fa-database', color:'from-orange-500 to-red-500' }
+            { title: 'Languages', items: ['Python', 'R', 'SQL', 'C++', 'Java'], icon: 'fas fa-code', color: 'from-blue-500 to-cyan-500' },
+            { title: 'ML & DL', items: ['TensorFlow', 'PyTorch', 'scikit-learn', 'XGBoost', 'Keras'], icon: 'fas fa-brain', color: 'from-purple-500 to-pink-500' },
+            { title: 'Data Tools', items: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Plotly'], icon: 'fas fa-chart-bar', color: 'from-green-500 to-emerald-500' },
+            { title: 'Platforms', items: ['AWS', 'GCP', 'Azure', 'Snowflake', 'Airflow'], icon: 'fas fa-database', color: 'from-orange-500 to-red-500' }
         ];
 
         // ============================================================
         // AI TWIN
         // ============================================================
         const aiTwinKnowledgeBase = [
-            { questions:['who are you','your name','about you'], answer:'I\'m Tirth Chheta, an MS Data Science student based in the NYC area, focused on turning messy data into practical, decision-ready insights.' },
-            { questions:['what are you studying','current degree','ms data science'], answer:'I\'m pursuing a Master of Science in Data Science at the University of New Haven (August 2024 – May 2026).' },
-            { questions:['where are you based','location','nyc'], answer:'I\'m currently based around the NYC area, studying at the University of New Haven and open to opportunities across the US.' },
-            { questions:['internship','summer 2026','availability'], answer:'I\'m actively seeking Summer 2026 Data Analyst / Data Scientist / Business Analyst internships in the US, especially around the NYC metro area.' },
-            { questions:['education','university of new haven'], answer:'Graduate: MS in Data Science at the University of New Haven (2024–2026). Undergraduate: BCA in Computer Science from Veer Narmad South Gujarat University / Sutex Bank College, plus schooling at The Radiant International School in Surat.' },
-            { questions:['skills','technical skills','what are your skills'], answer:'Core skills: Python, SQL, Pandas, NumPy, scikit-learn, PyTorch, XGBoost, FastAPI, Docker, AWS, and visualization with Power BI, Tableau, and Matplotlib.' },
-            { questions:['tecrave','data scientist','full time'], answer:'At Tecrave.org I worked as a full-time Data Scientist (remote), building and deploying ML models with up to 87% accuracy, developing LSTM/Prophet forecasting models, and deploying REST APIs via FastAPI, Docker, and AWS.' },
-            { questions:['laxmi software','python developer','api'], answer:'At Laxmi Software Technologies I worked as a part-time Python Developer, building backend automation, data pipelines, SQL optimization, and Power BI / Tableau dashboards for inventory and pricing analytics.' },
-            { questions:['breast cancer','tumor prediction','cancer project'], answer:'In my Breast Cancer Prediction project, I built interpretable classification models to separate benign vs malignant tumors, focusing on good recall with >90% test accuracy.' },
-            { questions:['diabetes project','diabetes risk'], answer:'My Diabetes Risk Prediction project uses health indicators like BMI and glucose levels to estimate diabetes risk early using logistic regression and tree-based models.' },
-            { questions:['nyse project','stock price prediction'], answer:'The NYSE Stock Price Prediction project explores long-horizon forecasting with ARIMA-baselines and sequence models on 1922–2024 data.' },
-            { questions:['recommendation system','movie recommendation','spotify'], answer:'I\'ve built recommenders for movies and music: hybrid collaborative + content-based engines and a Spotify-style mood-aware playlist recommender using audio features.' },
-            { questions:['contact','email','linkedin'], answer:'You can contact me at tirthchheta511@gmail.com or on LinkedIn at linkedin.com/in/tirthchheta.' },
-            { questions:['github','portfolio'], answer:'My GitHub is github.com/tirthchheta511, where I host my data science and ML projects.' },
-            { questions:['long term goal','career goal','future plans'], answer:'Long term I want to be a data scientist who can both build robust ML systems and communicate insights clearly to non-technical stakeholders.' }
+            { questions: ['who are you', 'your name', 'about you'], answer: 'I\'m Tirth Chheta, an MS Data Science student based in the NYC area, focused on turning messy data into practical, decision-ready insights.' },
+            { questions: ['what are you studying', 'current degree', 'ms data science'], answer: 'I\'m pursuing a Master of Science in Data Science at the University of New Haven (August 2024 – May 2026).' },
+            { questions: ['where are you based', 'location', 'nyc'], answer: 'I\'m currently based around the NYC area, studying at the University of New Haven and open to opportunities across the US.' },
+            { questions: ['internship', 'summer 2026', 'availability'], answer: 'I\'m actively seeking Summer 2026 Data Analyst / Data Scientist / Business Analyst internships in the US, especially around the NYC metro area.' },
+            { questions: ['education', 'university of new haven'], answer: 'Graduate: MS in Data Science at the University of New Haven (2024–2026). Undergraduate: BCA in Computer Science from Veer Narmad South Gujarat University / Sutex Bank College, plus schooling at The Radiant International School in Surat.' },
+            { questions: ['skills', 'technical skills', 'what are your skills'], answer: 'Core skills: Python, SQL, Pandas, NumPy, scikit-learn, PyTorch, XGBoost, FastAPI, Docker, AWS, Power BI, Tableau, and Matplotlib.' },
+            { questions: ['tecrave', 'data scientist', 'full time'], answer: 'At Tecrave.org I worked as a full-time Data Scientist (remote), building and deploying ML models with up to 87% accuracy, developing LSTM/Prophet forecasting models, and deploying REST APIs via FastAPI, Docker, and AWS.' },
+            { questions: ['laxmi software', 'python developer', 'api'], answer: 'At Laxmi Software Technologies I worked as a part-time Python Developer, building backend automation, data pipelines, SQL optimization, and Power BI / Tableau dashboards for inventory and pricing analytics.' },
+            { questions: ['hospital readmission', 'readmission prediction'], answer: 'My Hospital Readmission Prediction project used Random Forest and XGBoost on UCI Diabetes Hospital data achieving 88% accuracy, with SHAP analysis for interpretability and a Power BI dashboard for hospital resource planning.' },
+            { questions: ['air quality', 'pollution forecasting', 'aqi'], answer: 'My Air Quality Forecasting System used LSTM and Prophet models on EPA data to predict PM2.5 and CO2 levels across 50+ U.S. cities at 85% accuracy, deployed via FastAPI with a Power BI AQI dashboard.' },
+            { questions: ['ecommerce', 'e-commerce recommendation', 'product recommendation'], answer: 'My E-Commerce Recommendation Engine is a hybrid collaborative filtering + matrix factorization system achieving 91% precision, deployed via FastAPI and Docker with a Tableau KPI dashboard.' },
+            { questions: ['breast cancer', 'tumor prediction', 'cancer project'], answer: 'In my Breast Cancer Prediction project, I built interpretable classification models to separate benign vs malignant tumors, focusing on good recall with >90% test accuracy.' },
+            { questions: ['diabetes project', 'diabetes risk'], answer: 'My Diabetes Risk Prediction project uses health indicators like BMI and glucose levels to estimate diabetes risk early using logistic regression and tree-based models.' },
+            { questions: ['nyse project', 'stock price prediction'], answer: 'The NYSE Stock Price Prediction project explores long-horizon forecasting with ARIMA-baselines and LSTM models on 1922–2024 data.' },
+            { questions: ['recommendation system', 'movie recommendation', 'spotify'], answer: 'I\'ve built recommenders for movies, music, and e-commerce: hybrid collaborative + content-based engines achieving up to 91% precision.' },
+            { questions: ['medium', 'blog', 'articles'], answer: 'I write about data science on Medium at medium.com/@tirthchheta511.' },
+            { questions: ['contact', 'email', 'linkedin'], answer: 'You can contact me at tirthchheta511@gmail.com, LinkedIn at linkedin.com/in/tirthchheta, or read my articles on Medium at medium.com/@tirthchheta511.' },
+            { questions: ['github', 'portfolio'], answer: 'My GitHub is github.com/tirthchheta511, where I host my data science and ML projects.' },
+            { questions: ['long term goal', 'career goal', 'future plans'], answer: 'Long term I want to be a data scientist who can both build robust ML systems and communicate insights clearly to non-technical stakeholders.' }
         ];
 
         let currentExplainMode = 'student';
@@ -750,8 +890,8 @@
             if (!modal) return;
             document.getElementById('modal-title').textContent = project.title;
             document.getElementById('modal-description').textContent = project.explain?.engineer || project.explain?.recruiter || project.explain?.student || '';
-            document.getElementById('modal-metrics').innerHTML = Object.keys(project.metrics||{}).length ? `${project.metrics.testAcc?`<div class="p-4 bg-blue-500/10 border border-blue-500/30 rounded-xl"><p class="text-sm text-gray-400 mb-1">Test Metric</p><p class="text-3xl font-bold text-blue-400">${project.metrics.testAcc}</p></div>`:''}${project.metrics.trainAcc?`<div class="p-4 bg-purple-500/10 border border-purple-500/30 rounded-xl"><p class="text-sm text-gray-400 mb-1">Training Metric</p><p class="text-3xl font-bold text-purple-400">${project.metrics.trainAcc}</p></div>`:''}` : '';
-            document.getElementById('modal-tags').innerHTML = (project.tags||[]).map(tag=>`<span class="px-4 py-2 glass rounded-lg text-sm">${tag}</span>`).join('');
+            document.getElementById('modal-metrics').innerHTML = Object.keys(project.metrics || {}).length ? `${project.metrics.testAcc ? `<div class="p-4 bg-blue-500/10 border border-blue-500/30 rounded-xl"><p class="text-sm text-gray-400 mb-1">Test Metric</p><p class="text-3xl font-bold text-blue-400">${project.metrics.testAcc}</p></div>` : ''}${project.metrics.trainAcc ? `<div class="p-4 bg-purple-500/10 border border-purple-500/30 rounded-xl"><p class="text-sm text-gray-400 mb-1">Training Metric</p><p class="text-3xl font-bold text-purple-400">${project.metrics.trainAcc}</p></div>` : ''}` : '';
+            document.getElementById('modal-tags').innerHTML = (project.tags || []).map(tag => `<span class="px-4 py-2 glass rounded-lg text-sm">${tag}</span>`).join('');
             document.getElementById('modal-icon').innerHTML = `<i class="${project.icon} text-2xl"></i>`;
             modal.classList.remove('hidden'); modal.classList.add('flex');
         }
@@ -768,20 +908,20 @@
             for (let i = 0; i < 100; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
-                star.style.left = Math.random()*100+'%'; star.style.top = Math.random()*100+'%';
-                star.style.animationDelay = Math.random()*3+'s'; star.style.animationDuration = 2+Math.random()*3+'s';
+                star.style.left = Math.random() * 100 + '%'; star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's'; star.style.animationDuration = 2 + Math.random() * 3 + 's';
                 container.appendChild(star);
             }
         }
 
-        const typingSkills = ['Time Series','NLP','Deep Learning','MLOps','Computer Vision'];
+        const typingSkills = ['Time Series', 'NLP', 'Deep Learning', 'MLOps', 'Computer Vision'];
         let currentSkillIndex = 0, currentCharIndex = 0, isDeleting = false;
         function typeSkill() {
             const el = document.getElementById('typing-text');
             if (!el) return;
             const skill = typingSkills[currentSkillIndex];
-            if (!isDeleting) { el.textContent = skill.substring(0, currentCharIndex+1); currentCharIndex++; if (currentCharIndex===skill.length) setTimeout(()=>{ isDeleting=true; }, 2000); }
-            else { el.textContent = skill.substring(0, currentCharIndex-1); currentCharIndex--; if (currentCharIndex===0) { isDeleting=false; currentSkillIndex=(currentSkillIndex+1)%typingSkills.length; } }
+            if (!isDeleting) { el.textContent = skill.substring(0, currentCharIndex + 1); currentCharIndex++; if (currentCharIndex === skill.length) setTimeout(() => { isDeleting = true; }, 2000); }
+            else { el.textContent = skill.substring(0, currentCharIndex - 1); currentCharIndex--; if (currentCharIndex === 0) { isDeleting = false; currentSkillIndex = (currentSkillIndex + 1) % typingSkills.length; } }
             setTimeout(typeSkill, isDeleting ? 50 : 100);
         }
 
@@ -790,17 +930,17 @@
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         }
 
-        document.addEventListener('mousemove', e => { const f=document.getElementById('mouse-follower'); if(f){f.style.left=e.clientX+'px';f.style.top=e.clientY+'px';f.style.opacity='0.5';} });
+        document.addEventListener('mousemove', e => { const f = document.getElementById('mouse-follower'); if (f) { f.style.left = e.clientX + 'px'; f.style.top = e.clientY + 'px'; f.style.opacity = '0.5'; } });
         const mobileBtn = document.getElementById('mobile-menu-btn');
-        if (mobileBtn) mobileBtn.addEventListener('click', () => { const m=document.getElementById('mobile-menu'); if(m) m.classList.toggle('hidden'); });
+        if (mobileBtn) mobileBtn.addEventListener('click', () => { const m = document.getElementById('mobile-menu'); if (m) m.classList.toggle('hidden'); });
         const contactForm = document.getElementById('contact-form');
         if (contactForm) contactForm.addEventListener('submit', e => { e.preventDefault(); alert('Thank you for your message! I will get back to you within 24 hours.'); e.target.reset(); });
         const modalEl = document.getElementById('project-modal');
-        if (modalEl) modalEl.addEventListener('click', e => { if (e.target.id==='project-modal') closeModal(); });
+        if (modalEl) modalEl.addEventListener('click', e => { if (e.target.id === 'project-modal') closeModal(); });
 
         window.addEventListener('load', () => {
             generateStars(); typeSkill(); setExplainMode('student'); renderExperience(); renderSkills(); observeElements(); initAiTwin();
-            setInterval(() => { const p=document.createElement('div'); p.className='particle'; p.style.left=Math.random()*window.innerWidth+'px'; p.style.top=window.innerHeight+'px'; document.body.appendChild(p); setTimeout(()=>p.remove(),6000); }, 3000);
+            setInterval(() => { const p = document.createElement('div'); p.className = 'particle'; p.style.left = Math.random() * window.innerWidth + 'px'; p.style.top = window.innerHeight + 'px'; document.body.appendChild(p); setTimeout(() => p.remove(), 6000); }, 3000);
         });
     </script>
 </body>
