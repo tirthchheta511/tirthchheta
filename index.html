@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Chheta Survey · Tirth Chheta</title>
+<title>Tirth Chheta · Data Science Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -61,6 +61,8 @@ a{color:inherit;text-decoration:none}
 .console nav{margin-left:auto;display:flex;gap:18px}
 .console nav a{color:var(--silver-dim);letter-spacing:0.06em;transition:color .2s}
 .console nav a:hover{color:var(--phosphor)}
+.console nav a.dl{color:var(--phosphor);border:1px solid var(--phosphor-dim);padding:2px 9px;letter-spacing:0.1em}
+.console nav a.dl:hover{background:var(--phosphor);color:var(--plate);font-weight:700}
 .blink{animation:blink 1.1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 
@@ -232,6 +234,83 @@ footer{border-top:1px solid var(--rule);padding:22px 0;font-size:10.5px;color:va
   *{animation:none!important}
 }
 :focus-visible{outline:2px solid var(--phosphor);outline-offset:2px}
+
+/* ───────── data stories / field notes ───────── */
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.cards3 .card{background:#06080a;padding:18px 16px}
+.cards3 .card .ch-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.cards3 .card h3{font-size:14px;color:var(--phosphor);letter-spacing:0.04em}
+.cards3 .card .ctx{font-size:9.5px;letter-spacing:0.1em;color:var(--silver-faint);border:1px solid var(--rule);padding:2px 7px;text-transform:uppercase}
+.cards3 .card p{font-size:12px;color:var(--silver-dim);margin-bottom:10px;line-height:1.6}
+.cards3 .card ul{list-style:none}
+.cards3 .card li{font-size:11.5px;color:var(--silver-dim);padding:2px 0 2px 14px;position:relative}
+.cards3 .card li::before{content:"·";position:absolute;left:3px;color:var(--phosphor)}
+
+/* ───────── procedure / how I work ───────── */
+.proc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.proc .step{background:#06080a;padding:18px 16px}
+.proc .step .n{font-size:11px;color:var(--phosphor);letter-spacing:0.2em;border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:10px}
+.proc .step h3{font-size:14px;color:var(--silver);margin-bottom:6px;font-family:'Space Grotesk',sans-serif}
+.proc .step p{font-size:11.5px;color:var(--silver-dim);line-height:1.6}
+
+/* ───────── roadmap ───────── */
+.road{border:1px solid var(--rule)}
+.road .leg{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.road .leg:last-child{border-bottom:none}
+.road .leg .yr{font-size:10px;letter-spacing:0.14em;color:var(--phosphor);text-transform:uppercase}
+.road .leg h3{font-size:15px;color:var(--silver);margin:4px 0 3px;font-family:'Space Grotesk',sans-serif}
+.road .leg p{font-size:11.5px;color:var(--silver-dim);max-width:62ch;line-height:1.6}
+.road .leg .focus{font-size:10.5px;color:var(--silver-faint);white-space:nowrap}
+.road .leg .focus b{color:var(--phosphor);font-weight:400}
+
+/* ───────── sentiment lab ───────── */
+.lab{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.lab .pane{background:#06080a;padding:18px 16px;display:flex;flex-direction:column;gap:12px}
+.lab label{font-size:10px;letter-spacing:0.14em;color:var(--silver-dim);text-transform:uppercase}
+.lab textarea{width:100%;background:var(--plate);border:1px solid var(--rule);color:var(--silver);
+  font-family:'Space Mono',monospace;font-size:12px;padding:10px;resize:none;min-height:120px}
+.lab textarea:focus{outline:none;border-color:var(--phosphor-dim)}
+.lab .run{background:var(--phosphor);color:var(--plate);border:none;font-family:inherit;font-weight:700;
+  font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:9px;cursor:pointer;margin-top:auto}
+.lab .run:hover{background:#a8ffcb}
+.lab .note{font-size:10px;color:var(--silver-faint);line-height:1.5}
+.lab .res-top{display:flex;justify-content:space-between;align-items:center}
+.lab .pill{font-size:10px;letter-spacing:0.08em;border:1px solid var(--rule);padding:3px 9px;color:var(--silver-dim);text-transform:uppercase}
+.lab .pill.pos{border-color:var(--phosphor-dim);color:var(--phosphor)}
+.lab .pill.neg{border-color:#6b3030;color:var(--amber)}
+.lab .gauge{font-size:11px;color:var(--silver-dim);display:flex;justify-content:space-between;margin-bottom:4px}
+.lab .bar{height:5px;background:var(--plate);border:1px solid var(--rule);overflow:hidden}
+.lab .bar i{display:block;height:100%;background:var(--phosphor)}
+.lab .bar.neg i{background:var(--amber)}
+
+/* ───────── AI twin terminal ───────── */
+.twin{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:start}
+.twin .about h3{font-size:18px;color:var(--silver);margin-bottom:8px;font-family:'Space Grotesk',sans-serif}
+.twin .about p{font-size:12px;color:var(--silver-dim);line-height:1.7;margin-bottom:14px}
+.twin .about .qs{display:flex;flex-wrap:wrap;gap:6px}
+.twin .about .qs button{background:transparent;border:1px solid var(--rule);color:var(--silver-dim);
+  font-family:inherit;font-size:10.5px;padding:5px 9px;cursor:pointer;transition:all .18s}
+.twin .about .qs button:hover{border-color:var(--phosphor);color:var(--phosphor)}
+.term{border:1px solid var(--rule);background:#04060a}
+.term .tbar{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid var(--rule);font-size:10px;letter-spacing:0.14em;color:var(--silver-dim);text-transform:uppercase}
+.term .tbar .live{color:var(--phosphor)}
+.term .feed{height:300px;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:12px;font-size:12px}
+.term .msg{max-width:85%}
+.term .msg .who{font-size:9px;letter-spacing:0.12em;color:var(--silver-faint);text-transform:uppercase;margin-bottom:3px}
+.term .msg.bot .body{color:var(--silver);border-left:2px solid var(--phosphor-dim);padding-left:10px}
+.term .msg.usr{align-self:flex-end;text-align:right}
+.term .msg.usr .body{color:var(--silver-dim);border-right:2px solid var(--rule);padding-right:10px}
+.term form{display:flex;border-top:1px solid var(--rule)}
+.term input{flex:1;background:transparent;border:none;color:var(--silver);font-family:'Space Mono',monospace;font-size:12px;padding:11px 14px}
+.term input:focus{outline:none}
+.term input::placeholder{color:var(--silver-faint)}
+.term button.send{background:transparent;border:none;border-left:1px solid var(--rule);color:var(--phosphor);
+  font-family:inherit;font-size:11px;letter-spacing:0.1em;padding:0 16px;cursor:pointer;text-transform:uppercase}
+.term button.send:hover{background:var(--phosphor);color:var(--plate)}
+
+@media(max-width:720px){
+  .lab,.twin{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -249,7 +328,9 @@ footer{border-top:1px solid var(--rule);padding:22px 0;font-size:10.5px;color:va
       <a href="#catalogue">Catalogue</a>
       <a href="#log">Logbook</a>
       <a href="#spectrum">Spectrum</a>
+      <a href="#twin">Ask</a>
       <a href="#transmit">Contact</a>
+      <a href="filess/Tirthchheta.pdf" download="Tirthchheta.pdf" class="dl">↓ Résumé</a>
     </nav>
   </div>
 </div>
@@ -260,9 +341,9 @@ footer{border-top:1px solid var(--rule);padding:22px 0;font-size:10.5px;color:va
 <header class="hero" id="field">
   <div class="plate-meta">
     <div class="left">
-      <div class="eyebrow">Survey Plate · DS-2026 · Epoch J2026.5</div>
-      <h1>The <em>Chheta</em> Survey</h1>
-      <p class="sub">A catalogue of data-science objects observed by Tirth Chheta — MS Data Science, University of New Haven. Each object is plotted by epoch, domain, and measured magnitude.</p>
+      <div class="eyebrow">Data Science Portfolio · 2026</div>
+      <h1>Tirth <em>Chheta</em></h1>
+      <p class="sub">MS Data Science, University of New Haven. Turning data into decisions with Python, ML, and analytics — explored here as a small star catalogue. Each project below is plotted by domain and measured accuracy.</p>
     </div>
     <div class="right">
       <div>OBSERVER&nbsp; <b>Tirth Chheta</b></div>
@@ -407,10 +488,159 @@ footer{border-top:1px solid var(--rule);padding:22px 0;font-size:10.5px;color:va
   </div>
 </section>
 
+<!-- FIELD NOTES / DATA STORIES -->
+<section id="notes">
+  <div class="sec-head">
+    <span class="no">§06</span>
+    <h2>Field Notes</h2>
+    <span class="meta">data in action</span>
+  </div>
+  <div class="cards3">
+    <div class="card">
+      <div class="ch-top"><h3>ML Engineering</h3><span class="ctx">Tecrave.org</span></div>
+      <p>Built and deployed production ML models up to 87% accuracy, with REST APIs via FastAPI, Docker, and AWS cutting serving latency 35%.</p>
+      <ul>
+        <li>LSTM &amp; Prophet reduced prediction error 24%</li>
+        <li>Feature engineering boosted performance 18%</li>
+        <li>92% production reliability via ROC-AUC / F1</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="ch-top"><h3>Healthcare Analytics</h3><span class="ctx">ML Projects</span></div>
+      <p>Used structured patient data to predict breast cancer, diabetes, and hospital readmissions with SHAP interpretability for clinicians.</p>
+      <ul>
+        <li>88% accuracy on readmission prediction</li>
+        <li>SHAP analysis surfaced top risk factors</li>
+        <li>Power BI dashboard for resource planning</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="ch-top"><h3>User Experience</h3><span class="ctx">Recommenders</span></div>
+      <p>Built hybrid recommenders and NLP pipelines turning interaction and text data into targeted suggestions and content decisions.</p>
+      <ul>
+        <li>91% precision on e-commerce engine</li>
+        <li>Movie &amp; Spotify-style recommenders</li>
+        <li>FastAPI + Docker with Tableau KPI tracking</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCEDURE / HOW I WORK -->
+<section id="procedure">
+  <div class="sec-head">
+    <span class="no">§07</span>
+    <h2>Observing Procedure</h2>
+    <span class="meta">how I work with data</span>
+  </div>
+  <div class="proc">
+    <div class="step"><div class="n">01</div><h3>Understand the Problem</h3><p>Clarify metrics, success criteria, and constraints with stakeholders before touching a line of code.</p></div>
+    <div class="step"><div class="n">02</div><h3>Explore &amp; Clean</h3><p>Use Pandas, visualization, and profiling to understand distributions, leakage, and data-quality issues.</p></div>
+    <div class="step"><div class="n">03</div><h3>Build &amp; Validate</h3><p>Train baselines first, then iterate with better features, architectures, and proper evaluation (CV, right metrics).</p></div>
+    <div class="step"><div class="n">04</div><h3>Communicate &amp; Ship</h3><p>Turn results into dashboards and a simple story: what changed, by how much, and what to do next.</p></div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap">
+  <div class="sec-head">
+    <span class="no">§08</span>
+    <h2>Trajectory · 2024–2026</h2>
+    <span class="meta">learning roadmap</span>
+  </div>
+  <div class="road">
+    <div class="leg">
+      <div>
+        <div class="yr">2024 · Foundation</div>
+        <h3>Stats, Python &amp; ML Fundamentals</h3>
+        <p>Strengthening probability, statistics, core ML algorithms, and clean analysis code in Python &amp; SQL.</p>
+      </div>
+      <div class="focus">Focus: <b>regression, classification, EDA</b></div>
+    </div>
+    <div class="leg">
+      <div>
+        <div class="yr">2026 · Depth</div>
+        <h3>Deep Learning, NLP &amp; Time Series</h3>
+        <p>Building and deploying models for sequence data — stock prices, text, audio — with transformers and advanced architectures.</p>
+      </div>
+      <div class="focus">Focus: <b>LSTMs, transformers, forecasting</b></div>
+    </div>
+    <div class="leg">
+      <div>
+        <div class="yr">2026 · Systems</div>
+        <h3>MLOps &amp; Production Thinking</h3>
+        <p>Moving from one-off notebooks to reliable systems: experiment tracking, versioning, monitoring, deployment.</p>
+      </div>
+      <div class="focus">Focus: <b>MLOps, reproducibility</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- SENTIMENT LAB -->
+<section id="lab">
+  <div class="sec-head">
+    <span class="no">§09</span>
+    <h2>Sentiment Bench</h2>
+    <span class="meta">live demo</span>
+  </div>
+  <div class="lab">
+    <div class="pane">
+      <label>Input text</label>
+      <textarea id="s-in" placeholder="e.g. I love how clean and intuitive this dashboard is!"></textarea>
+      <button class="run" onclick="runSent()">Analyze</button>
+      <p class="note">A keyword-based approximation for demo only — real projects use trained models with proper evaluation.</p>
+    </div>
+    <div class="pane">
+      <div class="res-top"><label style="margin:0">Reading</label><span class="pill" id="s-pill">awaiting input</span></div>
+      <div style="font-size:40px" id="s-emoji">○</div>
+      <div>
+        <div class="gauge"><span>positive</span><span id="s-pos-n">0.00</span></div>
+        <div class="bar"><i id="s-pos-bar" style="width:0%"></i></div>
+      </div>
+      <div>
+        <div class="gauge"><span>negative</span><span id="s-neg-n">0.00</span></div>
+        <div class="bar neg"><i id="s-neg-bar" style="width:0%"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI TWIN -->
+<section id="twin">
+  <div class="sec-head">
+    <span class="no">§10</span>
+    <h2>Companion Probe</h2>
+    <span class="meta">ask about my work</span>
+  </div>
+  <div class="twin">
+    <div class="about">
+      <h3>A small agent that knows my record</h3>
+      <p>Ask about my education, projects, experience, skills, or the roles I'm looking for. Runs fully in your browser — no external calls, no tracking.</p>
+      <div class="qs">
+        <button onclick="ask('What does Tirth do now?')">Current role?</button>
+        <button onclick="ask('Tell me about the healthcare projects')">Healthcare work</button>
+        <button onclick="ask('What are your skills?')">Skills</button>
+        <button onclick="ask('Tell me about your research paper')">Publication</button>
+        <button onclick="ask('What roles are you looking for?')">Open to?</button>
+      </div>
+    </div>
+    <div class="term">
+      <div class="tbar"><span>COMPANION · TC-1</span><span class="live">● online</span></div>
+      <div class="feed" id="feed">
+        <div class="msg bot"><div class="who">TC-1</div><div class="body">Hi — I'm Tirth's companion probe. Ask me about his projects, skills, experience, or what roles he's after.</div></div>
+      </div>
+      <form id="twform">
+        <input id="twin" autocomplete="off" placeholder="type a question…">
+        <button class="send" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- TRANSMIT / CONTACT -->
 <section id="transmit">
   <div class="sec-head">
-    <span class="no">§06</span>
+    <span class="no">§11</span>
     <h2>Open Channel</h2>
     <span class="meta">contact</span>
   </div>
@@ -426,6 +656,7 @@ footer{border-top:1px solid var(--rule);padding:22px 0;font-size:10.5px;color:va
       <a href="https://github.com/tirthchheta511" target="_blank" rel="noopener"><span class="ch">GitHub</span>github.com/tirthchheta511</a>
       <a href="https://medium.com/@tirthchheta511" target="_blank" rel="noopener"><span class="ch">Medium</span>medium.com/@tirthchheta511</a>
       <a href="http://kaggle.com/tirthnileshchheta" target="_blank" rel="noopener"><span class="ch">Kaggle</span>kaggle.com/tirthnileshchheta</a>
+      <a href="filess/Tirthchheta.pdf" download="Tirthchheta.pdf"><span class="ch">Résumé</span>download PDF ↓</a>
     </div>
   </div>
 </section>
@@ -434,7 +665,7 @@ footer{border-top:1px solid var(--rule);padding:22px 0;font-size:10.5px;color:va
 
 <footer>
   <div class="wrap foot-in">
-    <span>THE CHHETA SURVEY · © 2026 Tirth Chheta</span>
+    <span>TIRTH CHHETA · DATA SCIENCE · © 2026</span>
     <span class="dim">Plotted in browser · no external trackers · <span id="sid2">--:--:--</span> SID</span>
   </div>
 </footer>
@@ -756,6 +987,62 @@ function renderLog(){
     lb.appendChild(d);
   });
 }
+
+/* ============ SENTIMENT BENCH ============ */
+const POS=['love','like','great','amazing','good','wonderful','awesome','fantastic','happy','enjoy','perfect','clean','intuitive','excellent','brilliant'];
+const NEG=['hate','bad','terrible','awful','horrible','angry','sad','worst','disappoint','broken','buggy','slow','confusing','ugly'];
+function runSent(){
+  const txt=(document.getElementById('s-in').value||'').toLowerCase();
+  let p=0,n=0; POS.forEach(w=>{if(txt.includes(w))p++}); NEG.forEach(w=>{if(txt.includes(w))n++});
+  const tot=p+n||1, ps=p/tot, ns=n/tot;
+  const pill=document.getElementById('s-pill'), em=document.getElementById('s-emoji');
+  let label='neutral / mixed', e='—', cls='pill';
+  if(ps>ns+0.2){label='positive';e='+';cls='pill pos';}
+  else if(ns>ps+0.2){label='negative';e='–';cls='pill neg';}
+  pill.className=cls; pill.textContent=label; em.textContent=e;
+  document.getElementById('s-pos-n').textContent=ps.toFixed(2);
+  document.getElementById('s-neg-n').textContent=ns.toFixed(2);
+  document.getElementById('s-pos-bar').style.width=(ps*100)+'%';
+  document.getElementById('s-neg-bar').style.width=(ns*100)+'%';
+}
+
+/* ============ COMPANION PROBE (AI twin) ============ */
+const KB=[
+ {q:['who','name','about'],a:"I'm Tirth Chheta, an MS Data Science student (University of New Haven) focused on turning messy data into decision-ready insights."},
+ {q:['now','current','present','evaanish','data analyst','job'],a:"I currently work as a remote Data Analyst at Evaanish Technologies Corp (Jan 2026–present) — cleaning and validating data with Excel, SQL, and Power BI, building dashboards and KPI reports, and running trend analysis to support team decisions."},
+ {q:['study','degree','education','university','new haven'],a:"MS in Data Science at the University of New Haven (2024–2026), after a BCA in Computer Science in Surat, India."},
+ {q:['roles','looking','open','hiring','availability','internship'],a:"I'm open to Data Scientist / Data Analyst / ML roles across the US."},
+ {q:['skill','stack','tools','tech'],a:"Core stack: Python, SQL, Pandas, NumPy, scikit-learn, XGBoost, PyTorch, FastAPI, Docker, AWS, Power BI, and Tableau."},
+ {q:['tecrave','data scientist'],a:"At Tecrave.org I was a Data Scientist — built and deployed ML models up to 87% accuracy, LSTM/Prophet forecasting, and REST APIs via FastAPI, Docker, and AWS."},
+ {q:['laxmi','python developer'],a:"At Laxmi Software Technologies I was a Python Developer — backend automation, data pipelines, SQL optimization, and Power BI / Tableau dashboards."},
+ {q:['paper','research','publication','acint','summarization','published'],a:"I published a peer-reviewed paper at ACINT 2025 (Dubai): \"Text Summarization using NLP — An Extractive Framework with Web-Based Interaction,\" built with Python, spaCy, and Streamlit, evaluated with ROUGE."},
+ {q:['healthcare','hospital','cancer','diabetes','medical'],a:"Healthcare projects: hospital readmission prediction (88%, with SHAP), breast cancer classification (~93%), and diabetes risk from routine health indicators."},
+ {q:['recommend','ecommerce','movie','spotify','recommender'],a:"I've built recommenders for e-commerce (91% precision), movies, and music — hybrid collaborative + content-based, deployed with FastAPI/Docker and Tableau KPIs."},
+ {q:['time series','forecast','air quality','stock','nyse'],a:"Time-series work: air-quality forecasting across 50+ US cities (LSTM/Prophet, 85%) and long-horizon NYSE price modeling (ARIMA vs LSTM)."},
+ {q:['nlp','sentiment','twitter','text'],a:"NLP work includes Twitter sentiment classification and my published extractive text-summarization framework."},
+ {q:['contact','email','reach','linkedin','github','resume','cv'],a:"Reach me at tirthchheta511@gmail.com, linkedin.com/in/tirthchheta, or github.com/tirthchheta511. My résumé is downloadable from the top bar."},
+ {q:['goal','future','plan','career'],a:"Long term I want to build robust ML systems and communicate insights clearly to non-technical stakeholders."}
+];
+function answer(m){
+  const t=m.toLowerCase(); let best=null,bs=0;
+  KB.forEach(e=>{let s=0;e.q.forEach(k=>{if(t.includes(k))s+=2; else k.split(' ').forEach(w=>{if(w.length>3&&t.includes(w))s++;});}); if(s>bs){bs=s;best=e.a;}});
+  return bs>0?best:"I can answer about my education, projects, experience, skills, publication, or the roles I'm after — try one of those.";
+}
+function pushMsg(who,body,cls){
+  const f=document.getElementById('feed');
+  const d=document.createElement('div'); d.className='msg '+cls;
+  d.innerHTML=`<div class="who">${who}</div><div class="body">${body}</div>`;
+  f.appendChild(d); f.scrollTop=f.scrollHeight;
+}
+function ask(q){
+  pushMsg('You',q,'usr');
+  setTimeout(()=>pushMsg('TC-1',answer(q),'bot'),220);
+}
+document.getElementById('twform').addEventListener('submit',e=>{
+  e.preventDefault();
+  const inp=document.getElementById('twin'); const v=inp.value.trim();
+  if(!v)return; inp.value=''; ask(v);
+});
 
 /* ============ INIT ============ */
 document.getElementById('objcount').textContent=OBJECTS.length;
